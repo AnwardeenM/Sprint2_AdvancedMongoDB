@@ -1,0 +1,865 @@
+{
+        "_id" : ObjectId("62494efa78120888f2e422e1"),
+        "id" : 5,
+        "movie_name" : "Stretch",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2016,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e2"),
+        "id" : 6,
+        "movie_name" : "Last Ride",
+        "movie_genre" : "Drama",
+        "production_year" : 2019,
+        "budget" : 18600
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e3"),
+        "id" : 7,
+        "movie_name" : "My Mother's Courage (Mutters Courage)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 11068
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e4"),
+        "id" : 8,
+        "movie_name" : "Swimming to Cambodia",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 12167
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e5"),
+        "id" : 9,
+        "movie_name" : "Big River Man",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 11813
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e6"),
+        "id" : 10,
+        "movie_name" : "Letting Go of God",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1992,
+        "budget" : 18229
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e7"),
+        "id" : 11,
+        "movie_name" : "Letter from Siberia",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2010,
+        "budget" : 11769
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e8"),
+        "id" : 12,
+        "movie_name" : "The Brave Little Toaster Goes to Mars",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2012,
+        "budget" : 10497
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e9"),
+        "id" : 13,
+        "movie_name" : "I See a Dark Stranger",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1998,
+        "budget" : 15910
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ea"),
+        "id" : 14,
+        "movie_name" : "American Reunion (American Pie 4)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2016,
+        "budget" : 18139
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422eb"),
+        "id" : 15,
+        "movie_name" : "Confession, The",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 17761
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ec"),
+        "id" : 16,
+        "movie_name" : "Nick of Time",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2009,
+        "budget" : 13237
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ed"),
+        "id" : 17,
+        "movie_name" : "1000 Eyes of Dr. Mabuse, The (Die 1000 Augen des Dr. Mabuse)",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "production_year" : 2006,
+        "budget" : 12502
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ee"),
+        "id" : 18,
+        "movie_name" : "Sex Is Comedy",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2010,
+        "budget" : 14500
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ef"),
+        "id" : 19,
+        "movie_name" : "White Hell of Pitz Palu, The (Die weiße Hölle vom Piz Palü) ",
+        "movie_genre" : "Action|Adventure|Drama",
+        "production_year" : 2003,
+        "budget" : 13438
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f0"),
+        "id" : 20,
+        "movie_name" : "Female Perversions",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 15811
+}
+Type "it" for more
+> db.Moviesdata.find({$nor:[{production_year:{$gt:2019}},{budget:{$gt:15000}}]}).pretty()
+{
+        "_id" : ObjectId("62494efa78120888f2e422df"),
+        "id" : 3,
+        "movie_name" : "Boys on the Side",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2002,
+        "budget" : 10790
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e0"),
+        "id" : 4,
+        "movie_name" : "Jesus of Montreal (Jésus de Montréal)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 10629
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e1"),
+        "id" : 5,
+        "movie_name" : "Stretch",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2016,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e3"),
+        "id" : 7,
+        "movie_name" : "My Mother's Courage (Mutters Courage)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 11068
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e4"),
+        "id" : 8,
+        "movie_name" : "Swimming to Cambodia",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 12167
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e5"),
+        "id" : 9,
+        "movie_name" : "Big River Man",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 11813
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e7"),
+        "id" : 11,
+        "movie_name" : "Letter from Siberia",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2010,
+        "budget" : 11769
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e8"),
+        "id" : 12,
+        "movie_name" : "The Brave Little Toaster Goes to Mars",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2012,
+        "budget" : 10497
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ec"),
+        "id" : 16,
+        "movie_name" : "Nick of Time",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2009,
+        "budget" : 13237
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ed"),
+        "id" : 17,
+        "movie_name" : "1000 Eyes of Dr. Mabuse, The (Die 1000 Augen des Dr. Mabuse)",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "production_year" : 2006,
+        "budget" : 12502
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ee"),
+        "id" : 18,
+        "movie_name" : "Sex Is Comedy",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2010,
+        "budget" : 14500
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ef"),
+        "id" : 19,
+        "movie_name" : "White Hell of Pitz Palu, The (Die weiße Hölle vom Piz Palü) ",
+        "movie_genre" : "Action|Adventure|Drama",
+        "production_year" : 2003,
+        "budget" : 13438
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f4"),
+        "id" : 24,
+        "movie_name" : "Riders of Destiny",
+        "movie_genre" : "Romance|Western",
+        "production_year" : 2016,
+        "budget" : 14405
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f9"),
+        "id" : 29,
+        "movie_name" : "10th Judicial Court: Judicial Hearings, The (10e chambre - Instants d'audience)",
+        "movie_genre" : "Documentary",
+        "production_year" : 2015,
+        "budget" : 14035
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fa"),
+        "id" : 30,
+        "movie_name" : "Buck",
+        "movie_genre" : "Documentary",
+        "production_year" : 2011,
+        "budget" : 10224
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fb"),
+        "id" : 31,
+        "movie_name" : "RoboCop",
+        "movie_genre" : "Action|Crime|Sci-Fi|IMAX",
+        "production_year" : 2011,
+        "budget" : 10814
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fc"),
+        "id" : 32,
+        "movie_name" : "Vincent: A Life in Color",
+        "movie_genre" : "Documentary",
+        "production_year" : 2000,
+        "budget" : 11728
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fe"),
+        "id" : 34,
+        "movie_name" : "Barefoot",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2011,
+        "budget" : 9853
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ff"),
+        "id" : 35,
+        "movie_name" : "Delicacy (La délicatesse)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1997,
+        "budget" : 12415
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42302"),
+        "id" : 38,
+        "movie_name" : "Emergency Squad",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : 10529
+}
+Type "it" for more
+> db.Moviesdata.find({$or:[{production_year:{$not:{$eq:2007}}},{budget:{$lt:15000}}]}).pretty()  
+{
+        "_id" : ObjectId("62494efa78120888f2e422dd"),
+        "id" : 1,
+        "movie_name" : "Earth Girls Are Easy",
+        "movie_genre" : "Comedy|Musical|Sci-Fi",
+        "production_year" : 2001,
+        "budget" : 15999
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422de"),
+        "id" : 2,
+        "movie_name" : "Looker",
+        "movie_genre" : "Drama|Horror|Sci-Fi|Thriller",
+        "production_year" : 2020,
+        "budget" : 18245
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422df"),
+        "id" : 3,
+        "movie_name" : "Boys on the Side",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2002,
+        "budget" : 10790
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e0"),
+        "id" : 4,
+        "movie_name" : "Jesus of Montreal (Jésus de Montréal)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 10629
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e1"),
+        "id" : 5,
+        "movie_name" : "Stretch",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2016,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e2"),
+        "id" : 6,
+        "movie_name" : "Last Ride",
+        "movie_genre" : "Drama",
+        "production_year" : 2019,
+        "budget" : 18600
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e3"),
+        "id" : 7,
+        "movie_name" : "My Mother's Courage (Mutters Courage)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 11068
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e4"),
+        "id" : 8,
+        "movie_name" : "Swimming to Cambodia",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 12167
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e5"),
+        "id" : 9,
+        "movie_name" : "Big River Man",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 11813
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e6"),
+        "id" : 10,
+        "movie_name" : "Letting Go of God",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1992,
+        "budget" : 18229
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e7"),
+        "id" : 11,
+        "movie_name" : "Letter from Siberia",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2010,
+        "budget" : 11769
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e8"),
+        "id" : 12,
+        "movie_name" : "The Brave Little Toaster Goes to Mars",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2012,
+        "budget" : 10497
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e9"),
+        "id" : 13,
+        "movie_name" : "I See a Dark Stranger",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1998,
+        "budget" : 15910
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ea"),
+        "id" : 14,
+        "movie_name" : "American Reunion (American Pie 4)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2016,
+        "budget" : 18139
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422eb"),
+        "id" : 15,
+        "movie_name" : "Confession, The",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 17761
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ec"),
+        "id" : 16,
+        "movie_name" : "Nick of Time",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2009,
+        "budget" : 13237
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ed"),
+        "id" : 17,
+        "movie_name" : "1000 Eyes of Dr. Mabuse, The (Die 1000 Augen des Dr. Mabuse)",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "production_year" : 2006,
+        "budget" : 12502
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ee"),
+        "id" : 18,
+        "movie_name" : "Sex Is Comedy",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2010,
+        "budget" : 14500
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ef"),
+        "id" : 19,
+        "movie_name" : "White Hell of Pitz Palu, The (Die weiße Hölle vom Piz Palü) ",
+        "movie_genre" : "Action|Adventure|Drama",
+        "production_year" : 2003,
+        "budget" : 13438
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f0"),
+        "id" : 20,
+        "movie_name" : "Female Perversions",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 15811
+}
+Type "it" for more
+> db.Moviesdata.find({production_year:{$in:[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015]}}).pretty()
+{
+        "_id" : ObjectId("62494efa78120888f2e422e0"),
+        "id" : 4,
+        "movie_name" : "Jesus of Montreal (Jésus de Montréal)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 10629
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e7"),
+        "id" : 11,
+        "movie_name" : "Letter from Siberia",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2010,
+        "budget" : 11769
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422e8"),
+        "id" : 12,
+        "movie_name" : "The Brave Little Toaster Goes to Mars",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2012,
+        "budget" : 10497
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ec"),
+        "id" : 16,
+        "movie_name" : "Nick of Time",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2009,
+        "budget" : 13237
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ed"),
+        "id" : 17,
+        "movie_name" : "1000 Eyes of Dr. Mabuse, The (Die 1000 Augen des Dr. Mabuse)",
+        "movie_genre" : "Crime|Horror|Mystery|Thriller",
+        "production_year" : 2006,
+        "budget" : 12502
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422ee"),
+        "id" : 18,
+        "movie_name" : "Sex Is Comedy",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2010,
+        "budget" : 14500
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f2"),
+        "id" : 22,
+        "movie_name" : "Bernie",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2011,
+        "budget" : 19941
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f5"),
+        "id" : 25,
+        "movie_name" : "Fight, Zatoichi, Fight (Zatôichi kesshô-tabi) (Zatôichi 8)",
+        "movie_genre" : "Action|Adventure|Comedy|Drama",
+        "production_year" : 2012,
+        "budget" : 16967
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f6"),
+        "id" : 26,
+        "movie_name" : "Lone Wolf and Cub: Baby Cart in Peril (Kozure Ôkami: Oya no kokoro ko no kokoro)",
+        "movie_genre" : "Action",
+        "production_year" : 2012,
+        "budget" : 19099
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422f9"),
+        "id" : 29,
+        "movie_name" : "10th Judicial Court: Judicial Hearings, The (10e chambre - Instants d'audience)",
+        "movie_genre" : "Documentary",
+        "production_year" : 2015,
+        "budget" : 14035
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fa"),
+        "id" : 30,
+        "movie_name" : "Buck",
+        "movie_genre" : "Documentary",
+        "production_year" : 2011,
+        "budget" : 10224
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fb"),
+        "id" : 31,
+        "movie_name" : "RoboCop",
+        "movie_genre" : "Action|Crime|Sci-Fi|IMAX",
+        "production_year" : 2011,
+        "budget" : 10814
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e422fe"),
+        "id" : 34,
+        "movie_name" : "Barefoot",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2011,
+        "budget" : 9853
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42300"),
+        "id" : 36,
+        "movie_name" : "Fistful of Fingers, A",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 2006,
+        "budget" : 17694
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42301"),
+        "id" : 37,
+        "movie_name" : "Better Housekeeping (a.k.a. Good Housekeeping)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2010,
+        "budget" : 16010
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42302"),
+        "id" : 38,
+        "movie_name" : "Emergency Squad",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : 10529
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42304"),
+        "id" : 40,
+        "movie_name" : "Deadly Outlaw: Rekka (a.k.a. Violent Fire) (Jitsuroku Andô Noboru kyôdô-den: Rekka)",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2006,
+        "budget" : 11408
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42315"),
+        "id" : 57,
+        "movie_name" : "Lumberjacking (Nuoruuteni savotat)",
+        "movie_genre" : "Drama",
+        "production_year" : 2014,
+        "budget" : 9375
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42318"),
+        "id" : 60,
+        "movie_name" : "Mighty Joe Young",
+        "movie_genre" : "Action|Adventure|Drama|Fantasy|Thriller",
+        "production_year" : 2010,
+        "budget" : 12723
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4231a"),
+        "id" : 62,
+        "movie_name" : "Jekyll + Hyde",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2015,
+        "budget" : 13718
+}
+Type "it" for more
+> db.Moviesdata.find({}).sort({production_year:-1,movie_name:1}).pretty()
+{
+        "_id" : ObjectId("62494efa78120888f2e42327"),
+        "id" : 75,
+        "movie_name" : "Castle, The (Das Schloß)",
+        "movie_genre" : "Drama|Mystery",
+        "production_year" : 2021,
+        "budget" : 16737
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423d1"),
+        "id" : 245,
+        "movie_name" : "Doctor Dolittle",
+        "movie_genre" : "Adventure|Children|Musical",
+        "production_year" : 2021,
+        "budget" : 17352
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42451"),
+        "id" : 373,
+        "movie_name" : "Fragile",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2021,
+        "budget" : 15570
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423f6"),
+        "id" : 282,
+        "movie_name" : "Go",
+        "movie_genre" : "Drama",
+        "production_year" : 2021,
+        "budget" : 13926
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4240d"),
+        "id" : 305,
+        "movie_name" : "I'm with Lucy",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2021,
+        "budget" : 15989
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4243e"),
+        "id" : 354,
+        "movie_name" : "Losing Isaiah",
+        "movie_genre" : "Drama",
+        "production_year" : 2021,
+        "budget" : 9057
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e424b4"),
+        "id" : 472,
+        "movie_name" : "Loves of a Blonde (Lásky jedné plavovlásky)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2021,
+        "budget" : 19282
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423ed"),
+        "id" : 273,
+        "movie_name" : "Maid in Sweden",
+        "movie_genre" : "Drama",
+        "production_year" : 2021,
+        "budget" : 19410
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423f7"),
+        "id" : 283,
+        "movie_name" : "Ninja: Shadow of a Tear",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2021,
+        "budget" : 18352
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4244a"),
+        "id" : 366,
+        "movie_name" : "Sex and the Single Girl",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2021,
+        "budget" : 15578
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423d0"),
+        "id" : 244,
+        "movie_name" : "Spanish Apartment, The (L'auberge espagnole)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2021,
+        "budget" : 17581
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423d4"),
+        "id" : 248,
+        "movie_name" : "Street Fighter: Assassin's Fist",
+        "movie_genre" : "Action|Adventure|Drama|Thriller",
+        "production_year" : 2021,
+        "budget" : 9907
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4241b"),
+        "id" : 319,
+        "movie_name" : "Three Came Home",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2021,
+        "budget" : 14923
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42404"),
+        "id" : 296,
+        "movie_name" : "Youth of the Beast (Yaju no seishun)",
+        "movie_genre" : "Action|Crime|Mystery",
+        "production_year" : 2021,
+        "budget" : 14906
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42405"),
+        "id" : 297,
+        "movie_name" : "Alamo, The",
+        "movie_genre" : "Action|Drama|War|Western",
+        "production_year" : 2020,
+        "budget" : 17341
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e424a1"),
+        "id" : 453,
+        "movie_name" : "All Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2020,
+        "budget" : 16813
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4241c"),
+        "id" : 320,
+        "movie_name" : "Dragon Crusaders",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 2020,
+        "budget" : 16568
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423cb"),
+        "id" : 239,
+        "movie_name" : "God Save My Shoes",
+        "movie_genre" : "Documentary",
+        "production_year" : 2020,
+        "budget" : 9541
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4244e"),
+        "id" : 370,
+        "movie_name" : "Intruder, The",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 2020,
+        "budget" : 17716
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42439"),
+        "id" : 349,
+        "movie_name" : "Kogel mogel",
+        "movie_genre" : "Comedy",
+        "production_year" : 2020,
+        "budget" : 14686
+}
+Type "it" for more
+>  db.Moviesdata.find({}).sort({production_year:-1,movie_name:1}).skip(10).limit(10).pretty()
+{
+        "_id" : ObjectId("62494efa78120888f2e423d0"),
+        "id" : 244,
+        "movie_name" : "Spanish Apartment, The (L'auberge espagnole)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2021,
+        "budget" : 17581
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423d4"),
+        "id" : 248,
+        "movie_name" : "Street Fighter: Assassin's Fist",
+        "movie_genre" : "Action|Adventure|Drama|Thriller",
+        "production_year" : 2021,
+        "budget" : 9907
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4241b"),
+        "id" : 319,
+        "movie_name" : "Three Came Home",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2021,
+        "budget" : 14923
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42404"),
+        "id" : 296,
+        "movie_name" : "Youth of the Beast (Yaju no seishun)",
+        "movie_genre" : "Action|Crime|Mystery",
+        "production_year" : 2021,
+        "budget" : 14906
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42405"),
+        "id" : 297,
+        "movie_name" : "Alamo, The",
+        "movie_genre" : "Action|Drama|War|Western",
+        "production_year" : 2020,
+        "budget" : 17341
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e424a1"),
+        "id" : 453,
+        "movie_name" : "All Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2020,
+        "budget" : 16813
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4241c"),
+        "id" : 320,
+        "movie_name" : "Dragon Crusaders",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 2020,
+        "budget" : 16568
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e423cb"),
+        "id" : 239,
+        "movie_name" : "God Save My Shoes",
+        "movie_genre" : "Documentary",
+        "production_year" : 2020,
+        "budget" : 9541
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e4244e"),
+        "id" : 370,
+        "movie_name" : "Intruder, The",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 2020,
+        "budget" : 17716
+}
+{
+        "_id" : ObjectId("62494efa78120888f2e42439"),
+        "id" : 349,
+        "movie_name" : "Kogel mogel",
+        "movie_genre" : "Comedy",
+        "production_year" : 2020,
+        "budget" : 14686
+}
+> db.Moviesdata.find({}).sort({production_year:-1,movie_name:1}).skip(10).limit(10).remove({"movie_genre"}).pretty()
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:103
+> db.Moviesdata.find({}).sort({production_year:-1,movie_name:1}).skip(10).limit(10).remove({movie_genre}).pretty()  
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:91
+>
